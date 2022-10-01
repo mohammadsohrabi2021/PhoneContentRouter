@@ -1,10 +1,11 @@
 import React from 'react';
 import Styles from "./Navbar.module.css";
-import Form from '../FormData/FormData';
+import Search from '../Search/Search'
 const Navbar =()=> {
      return (
         <div className={Styles.container}> 
-            <Form />
+          <Search/>
+          <button>Add User</button>
         </div>
     );
 }

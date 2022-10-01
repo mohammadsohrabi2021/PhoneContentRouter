@@ -6,7 +6,7 @@ function Main() {
 
     return (
         <div className={Styles.container}>
-            <Navbar />
+           <Navbar/>
         </div>
     );
 

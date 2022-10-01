@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Styles from "./Filte.module.css"
 
 const Filter = ({filterData,setFilter }) => {
@@ -13,7 +13,7 @@ const Filter = ({filterData,setFilter }) => {
             </div>
             <div className={Styles.container}>
                 {filterData.map(filterBtn => (
-                    <p className={Styles.child}>
+                    <p className={Styles.child} >
                         <input  name='title' type={'radio'} onClick={() => handleFilterBtn(filterBtn.title)}/>
                         {filterBtn.title}
                     </p>

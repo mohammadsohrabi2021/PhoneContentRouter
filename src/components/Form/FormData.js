@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import FormToDo from '../FormLogin/FormLogin';
-import ToDoCard from '../ToDoCard/ToDoCard';
+import FormToDo from './FormLogin';
+import ToDoCard from './ToDoCard';
 const Form = () => {
   const [todos, setTodos] = useState([
     { user: Math.floor(Math.random() * 1000), name: "mohammad", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com" ,state:'unfavoriteData'},

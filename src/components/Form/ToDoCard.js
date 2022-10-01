@@ -1,10 +1,10 @@
 import React from 'react';
 import { useState, useRef } from "react";
 import Styles from "./ToDoCard.module.css";
-import Dialog from '../Dialog/Dialog';
+import Dialog from './Dialog';
 import Search from "../Search/Search"
 import Filter from '../Filter/Filter';
-import Card from '../Card/Card';
+import Card from './Card';
 const filterData = [
     { id: 1, title: 'allData' },
     { id: 2, title: 'favoriteData' },
@@ -60,7 +60,7 @@ const ToDoCard = ({  todos, setTodos, setFormStatus, setForm }) => {
     //  filter
     const [filter, setFilter] = useState('allData')
     return (
-        <div class="card my-4" className={Styles.containerCard}>
+        <div>
            <Search handleSearch={handleSearch} search={search}/>
            <Filter filterData={filterData} setFilter={setFilter}/>
             {todos.filter(todo => todo.name.toUpperCase().includes(search.toUpperCase())&& (filter === 'allData' ? true : todo.state === filter)) .map(todo => (

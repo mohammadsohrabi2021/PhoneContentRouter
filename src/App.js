@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "./App.css"
 import Main from './components/Main/Main';
-class App extends Component {
-  render() {
+
+const App =()=> {
     return (
       <div className='Flexcontainer'>
         <Main />
       </div>
     );
-  }
 }
 
 export default App;

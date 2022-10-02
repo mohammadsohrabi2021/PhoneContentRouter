@@ -11,9 +11,7 @@ const Form = () => {
   ])
   const [form, setForm] = useState({ name: '', lastName: '', phone: '', age: '', Country: '', City: '', email: '' })
   const [FormStatus, setFormStatus] = useState('add')
-
-
-
+  // handleSubmit
   const handleSubmit = event => {
     event.preventDefault()
     if (FormStatus === 'add') {
@@ -25,6 +23,7 @@ const Form = () => {
     setForm({ name: '', lastName: '', phone: '', age: '', Country: '', City: '', email: '' })
     setFormStatus('add')
   }
+  // handleChange
   const handleChange = event => {
     setForm({ ...form, [event.target.name]: event.target.value })
   }

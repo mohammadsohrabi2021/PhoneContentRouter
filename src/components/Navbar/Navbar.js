@@ -4,7 +4,7 @@ import Form from '../Form/FormData';
 const Navbar =()=> {
      return (
         <div className={Styles.container}> 
-            <Form />
+           <Form/>
         </div>
     );
 }

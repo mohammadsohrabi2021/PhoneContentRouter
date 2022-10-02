@@ -60,10 +60,10 @@ const ToDoCard = ({  todos, setTodos, setFormStatus, setForm }) => {
     //  filter
     const [filter, setFilter] = useState('allData')
     return (
-        <div>
+        <div key={Math.random()}>
            <Search handleSearch={handleSearch} search={search}/>
            <Filter filterData={filterData} setFilter={setFilter}/>
-            {todos.filter(todo => todo.name.toUpperCase().includes(search.toUpperCase())&& (filter === 'allData' ? true : todo.state === filter)) .map(todo => (
+            {todos.filter(todo => todo.name.toUpperCase().includes(search.toUpperCase()) && (filter === 'allData' ? true : todo.state === filter)).map(todo => (
             <Card todo={todo} Styles={Styles} handelCheck={handelCheck} handeleDelete={handeleDelete} handleUpdate={handleUpdate}/>
         ))} 
             {dialog.isLoading && (

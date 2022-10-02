@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import FormToDo from './FormLogin';
+import FormLogin from './FormLogin' 
 import ToDoCard from './ToDoCard';
 const Form = () => {
   const [todos, setTodos] = useState([
@@ -30,7 +30,7 @@ const Form = () => {
   }
   return (
     <div>
-      <FormToDo handleChange={handleChange} handleSubmit={handleSubmit} form={form} formStatus={FormStatus} setForm={setForm} setTodos={setTodos} todos={todos} setFormStatus={setFormStatus} />
+      <FormLogin handleChange={handleChange} handleSubmit={handleSubmit} form={form} formStatus={FormStatus} setForm={setForm} setTodos={setTodos} todos={todos} setFormStatus={setFormStatus} />
       <ToDoCard  todos={todos} setForm={setForm} setFormStatus={setFormStatus} setTodos={setTodos} />
     </div>
   );

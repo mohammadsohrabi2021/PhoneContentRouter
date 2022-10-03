@@ -9,8 +9,12 @@ const Filter = ({ setFilter }) => {
     const handleFilterBtn = title => {
         setFilter(title)
     }
+
     return (
-        <div >
+        <div className={styles.container}>
+            <div className={styles.iconFilter}>
+            <i class="fa-solid fa-filter"></i>
+            </div>
             <div className={styles.filter}>
                 {filterData.map(filterBtn => (
                     <p className={styles.childFilter}>

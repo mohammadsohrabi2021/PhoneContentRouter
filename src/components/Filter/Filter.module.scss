@@ -1,11 +1,20 @@
-.filter{
+.container{
     display: flex;
-    width: 50%;
-    justify-content: space-between;
-    .childFilter{
+    align-items: center;
+    padding:40px 20px ;
+    gap:10px;
+    .iconFilter{
+       font-size: 40px;
+    }
+    .filter{
         display: flex;
-        align-items: center;
-        gap:10px;
-        padding:40px 20px ;
+        width: 50%;
+        justify-content: space-between;
+        .childFilter{
+            display: flex;
+            align-items: center;
+            gap:10px;
+            cursor: pointer;
+        }
     }
 }

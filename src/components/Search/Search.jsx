@@ -1,5 +1,5 @@
 import React from 'react';
-
+import styles from './Search.module.scss'
 const Search = ({search,setSearch}) => {
       // search
       const handleSearch = e =>{
@@ -7,7 +7,7 @@ const Search = ({search,setSearch}) => {
       }
  
     return (
-        <div>
+        <div className={styles.inputSearch}>
             <input  value={search} onChange={handleSearch} placeholder='Search...' />
         </div>
     );

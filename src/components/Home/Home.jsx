@@ -41,7 +41,7 @@ const Home = ({ todos, setTodos, setForm, setFormStatus }) => {
                 <h5>Mohammad Sohrabi</h5>
                 <Search search={search} setSearch={setSearch} />
                 <Link to={`/Form`}>
-                    <button>
+                    <button className={styles.buttonAdd}>
                         <i class="fa-regular fa-user"></i>+ Add User
                     </button>
                 </Link>

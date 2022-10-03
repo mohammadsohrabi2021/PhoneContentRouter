@@ -5,4 +5,19 @@
     align-items: center;
     justify-content: space-between;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    .buttonAdd{
+        outline: 0;
+        border: 0;
+        cursor: pointer;
+        border-radius: 3px;
+        padding: 5px 20px;
+        color: #fff;
+        background-color: rgb(42, 152, 42);
+        transition: all 0.3s;
+        font-weight: bold;
+        &:hover{
+            background-color: rgba(0, 200, 0,0.5);
+            color:#fff ;
+        }
+    }
 }

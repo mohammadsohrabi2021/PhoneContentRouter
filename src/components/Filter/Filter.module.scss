@@ -1,3 +1,11 @@
 .filter{
     display: flex;
+    width: 50%;
+    justify-content: space-between;
+    .childFilter{
+        display: flex;
+        align-items: center;
+        gap:10px;
+        padding:40px 20px ;
+    }
 }

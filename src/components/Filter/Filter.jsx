@@ -11,12 +11,9 @@ const Filter = ({ setFilter }) => {
     }
     return (
         <div >
-            <div>
-                filter:
-            </div>
             <div className={styles.filter}>
                 {filterData.map(filterBtn => (
-                    <p>
+                    <p className={styles.childFilter}>
                         <input name='title' type={'radio'} onClick={() => handleFilterBtn(filterBtn.title)} />
                         {filterBtn.title}
                     </p>

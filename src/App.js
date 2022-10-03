@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import "./App.css"
 import Home from './components/Home/Home';
-import {createBrowserRouter, RouterProvider, Route,} from "react-router-dom";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Form from './components/Form/Form';
 import { DataForm } from './components/Data/Data';
 

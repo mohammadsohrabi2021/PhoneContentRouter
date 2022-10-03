@@ -5,6 +5,7 @@ import { useState, useRef } from "react";
 import Card from '../Card/Card';
 import Search from '../Search/Search';
 import Filter from '../Filter/Filter';
+import styles from './Home.module.scss'
 const Home = ({ todos, setTodos, setForm, setFormStatus }) => {
     const [dialog, setDialog] = useState({
         message: "",
@@ -36,18 +37,22 @@ const Home = ({ todos, setTodos, setForm, setFormStatus }) => {
     const [filter, setFilter] = useState('allData')
     return (
         <div>
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-
+            <div className={styles.navbar}>
+                <h5>Mohammad Sohrabi</h5>
                 <Search search={search} setSearch={setSearch} />
+                <Link to={`/Form`}>
+                    <button>
+                        <i class="fa-regular fa-user"></i>+ Add User
+                    </button>
+                </Link>
+            </div>
+            <div>
                 <Filter setFilter={setFilter} />
+            </div>
+            <div>
                 {todos.filter(todo => todo.name.toUpperCase().includes(search.toUpperCase()) && (filter === 'allData' ? true : todo.state === filter)).map(todo => (
                     <Card todo={todo} setForm={setForm} setFormStatus={setFormStatus} todos={todos} setTodos={setTodos} handleDialog={handleDialog} idProductRef={idProductRef} />
                 ))}
-
-
-                <Link to={`/Form`}>
-                    <button>ADD USER</button>
-                </Link>
             </div>
 
             {dialog.isLoading && (

@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+    .iconBack {
+        position: absolute;
+        top: 15px;
+        left: 15%;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 100%;
+        font-size: 30px;
+        border: none;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+         input{
+            border-radius: 25px;
+            padding: 5px 30px;
+        }
+    }
+}

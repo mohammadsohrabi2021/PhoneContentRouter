@@ -41,6 +41,21 @@
     .display__Seven{display: none;}
     .display__eight{display: none;}
 }
+@media only screen and (max-width: 590px) {
+    .display__one{display: none;}
+    .display__Three{display: none;}
+    .display__five{display: none;}
+    .display__six{display: none;}
+    .display__Seven{display: none;}
+    .display__eight{display: none;}
+}
+@media only screen and (max-width: 620px) {
+    .display__one{display: none;}
+    .display__five{display: none;}
+    .display__six{display: none;}
+    .display__Seven{display: none;}
+    .display__eight{display: none;}
+}
 @media only screen and (max-width: 768px) {
     .display__five{display: none;}
     .display__six{display: none;}

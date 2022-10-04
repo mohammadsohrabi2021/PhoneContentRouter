@@ -21,3 +21,11 @@
         }
     }
 }
+@media only screen and (max-width: 425px) {
+    .navbar h5{
+        display: none;
+    }
+    .buttonAdd{
+        font-size: 12px;
+    }
+}

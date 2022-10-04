@@ -50,6 +50,22 @@ const Home = ({ todos, setTodos, setForm, setFormStatus }) => {
                 <Filter setFilter={setFilter} />
             </div>
             <div>
+                <table  style={{ width:'90%',margin:'0  20px'}} >
+                    <tr>
+                    <td>image</td>
+                    <td style={{padding:' 0 25px'}}>id</td>
+                    <td>Name</td>
+                    <td style={{padding:' 0 20px 0 80px'}}>LastName</td>
+                    <td>phone</td>
+                    <td style={{padding:' 0 40px 0 80px'}}>state</td>
+                    <td>age</td>
+                    <td style={{padding:' 0 30px 0 10px'}}>Country</td>
+                    <td>City</td>
+                    <td style={{padding:' 0 200px'}}>Email</td>
+                    <td style={{direction:'rtl'}}>option</td>
+                    
+                    </tr>
+                </table>
                 {todos.filter(todo => todo.name.toUpperCase().includes(search.toUpperCase()) && (filter === 'allData' ? true : todo.state === filter)).map(todo => (
                     <Card todo={todo} setForm={setForm} setFormStatus={setFormStatus} todos={todos} setTodos={setTodos} handleDialog={handleDialog} idProductRef={idProductRef} />
                 ))}

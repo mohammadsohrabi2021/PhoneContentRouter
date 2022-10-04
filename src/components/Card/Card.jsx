@@ -22,40 +22,40 @@ const Card = ({ setForm, setFormStatus, setTodos, todos, handleDialog, idProduct
                 <div>
                     <img style={{width:'50px'}} src={`https://avatars.dicebear.com/api/avataaars/:${todo.user}.svg`} alt="avatar" />
                 </div>
-                <div>
+                <div className={styles.display__one}>
                     <h5>{todo.user}</h5>
                 </div>
                 <div>
                     <h5>{todo.name}</h5>
                 </div>
-                <div>
+                <div className={styles.display__two}>
                     <h5>{todo.lastName}</h5>
                 </div>
-                <div>
+                <div className={styles.display__Three}>
                     <h5>{todo.phone}</h5>
                 </div>
-                <div onClick={() => handelCheck(todo.user)} style={{ cursor: 'pointer' }}>
+                <div className={styles.display__four} onClick={() => handelCheck(todo.user)} style={{ cursor: 'pointer' }}>
                     <h5>{todo.state ? ' Inactive ' : ' active '}</h5>
                 </div>
-                <div>
+                <div className={styles.display__five}>
                     <h5>{todo.age}</h5>
                 </div>
-                <div>
+                <div className={styles.display__six}>
                     <h5>{todo.Country}</h5>
                 </div>
-                <div>
+                <div className={styles.display__Seven}>
                     <h5>{todo.City}</h5>
                 </div>
-                <div>
+                <div className={styles.display__eight}>
                     <h5>{todo.email}</h5>
                 </div>
                 <div>
-                    <button className='btn btn-danger m-3' onClick={() => handeleDelete(todo.user)}>
-                        delete
+                    <button className='btn btn-danger mx-1 my-3' onClick={() => handeleDelete(todo.user)}>
+                    <i class="fa-solid fa-trash"></i>
                     </button>
                     <Link to={`/Form`}>
-                        <button className='btn btn-success m-2' onClick={() => handleUpdate(todo)}>
-                            upDate
+                        <button className='btn btn-success mx-1 my-3' onClick={() => handleUpdate(todo)}>
+                        <i class="fa-solid fa-user-pen"></i>
                         </button>
                     </Link>
                 </div>

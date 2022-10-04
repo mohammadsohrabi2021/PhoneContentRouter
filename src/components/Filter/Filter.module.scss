@@ -5,10 +5,12 @@
     gap:10px;
     .iconFilter{
        font-size: 40px;
+       display: flex;
+       flex-direction: column;
     }
     .filter{
         display: flex;
-        width: 50%;
+        flex-wrap: wrap;
         justify-content: space-between;
         .childFilter{
             display: flex;

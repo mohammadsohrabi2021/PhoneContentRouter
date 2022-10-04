@@ -23,9 +23,9 @@
 
 }
 @media only screen and (max-width: 375px) {
+    .display__one{display: none;}
     .display__two{display: none;}
     .display__Three{display: none;}
-    .display__four{display: none;}
     .display__five{display: none;}
     .display__six{display: none;}
     .display__Seven{display: none;}
@@ -33,15 +33,15 @@
 
 }
 @media only screen and (max-width: 425px) {
+    .display__one{display: none;}
+    .display__two{display: none;}
     .display__Three{display: none;}
-    .display__four{display: none;}
     .display__five{display: none;}
     .display__six{display: none;}
     .display__Seven{display: none;}
     .display__eight{display: none;}
 }
 @media only screen and (max-width: 768px) {
-    .display__four{display: none;}
     .display__five{display: none;}
     .display__six{display: none;}
     .display__Seven{display: none;}

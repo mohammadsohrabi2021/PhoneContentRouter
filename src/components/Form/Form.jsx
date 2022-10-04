@@ -24,29 +24,31 @@ const Form = ({ setTodos, todos, form, setForm, setFormStatus, FormStatus }) => 
 
     return (
         <div className={styles.container}>
-            <Link to={`/`} className={styles.iconBack}>
-                <i class="fa-solid fa-arrow-left"></i>
-            </Link>
-            <form onSubmit={handleSubmit} className={styles.form}>
-                <lable htmlFor={'name'}>Name:*</lable>
-                <input type='text' name='name' value={form.name} onChange={handleChange} placeholder='' />
-                <lable htmlFor={'lastName'}>lastName:*</lable>
-                <input type='text' name='lastName' value={form.lastName} onChange={handleChange} placeholder='' />
-                <lable htmlFor={'phone'}>Phone:*</lable>
-                <input type='number' name='phone' value={form.phone} onChange={handleChange} placeholder='' />
-                <lable htmlFor={'City'}>City:*</lable>
-                <input type='text' name='City' value={form.City} onChange={handleChange} placeholder='' />
-                <lable htmlFor={'Country'}>Country:*</lable>
-                <input type='text' name='Country' value={form.Country} onChange={handleChange} placeholder='' />
-                <lable htmlFor={'email'}>Email:*</lable>
-                <input type='email' name='email' value={form.email} onChange={handleChange} placeholder='' />
-                <lable htmlFor={'age'}>age:*</lable>
-                <input type='number' name='age' value={form.age} onChange={handleChange} placeholder='' />
+            <div className={styles.containerForm}>
+                <Link to={`/`} className={styles.iconBack}>
+                    <i class="fa-solid fa-arrow-left"></i>
+                </Link>
+                <form onSubmit={handleSubmit} className={styles.form}>
+                    <lable htmlFor={'name'}>Name:*</lable>
+                    <input type='text' name='name' value={form.name} onChange={handleChange} placeholder='Mohammad' />
+                    <lable htmlFor={'lastName'}>lastName:*</lable>
+                    <input type='text' name='lastName' value={form.lastName} onChange={handleChange} placeholder='Sohrabi' />
+                    <lable htmlFor={'phone'}>Phone:*</lable>
+                    <input type='number' name='phone' value={form.phone} onChange={handleChange} placeholder='0918xxxxxxx' />
+                    <lable htmlFor={'City'}>City:*</lable>
+                    <input type='text' name='City' value={form.City} onChange={handleChange} placeholder='Hamedan' />
+                    <lable htmlFor={'Country'}>Country:*</lable>
+                    <input type='text' name='Country' value={form.Country} onChange={handleChange} placeholder='Iran' />
+                    <lable htmlFor={'email'}>Email:*</lable>
+                    <input type='email' name='email' value={form.email} onChange={handleChange} placeholder='Ms@gmail.com' />
+                    <lable htmlFor={'age'}>age:*</lable>
+                    <input type='number' name='age' value={form.age} onChange={handleChange} placeholder='21' />
 
-                <button type='submit' onClick={handleSubmit} >
-                    {FormStatus === 'add' ? 'submit' : 'update'}
-                </button>
-            </form>
+                    <button type='submit' onClick={handleSubmit} className='btn btn-success my-3' >
+                        {FormStatus === 'add' ? 'submit' : 'update'}
+                    </button>
+                </form>
+            </div>
         </div>
     );
 };

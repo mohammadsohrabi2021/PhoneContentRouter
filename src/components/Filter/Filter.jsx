@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styles from './Filter.module.scss'
 const filterData = [
-    { id: 1, title: 'allData' },
-    { id: 2, title: 'favoriteData' },
-    { id: 3, title: 'unfavoriteData' },
+    { id: 1, title: 'allData' ,name:'AllData'},
+    { id: 2, title:true ,name:'favoriteData'},
+    { id: 3, title: false ,name:'unfavoriteData'},
 ]
 const Filter = ({ setFilter }) => {
     const handleFilterBtn = title => {
@@ -34,7 +34,7 @@ const handleDisFilter =()=>{
                 {filterData.map(filterBtn => (
                     <p className={styles.childFilter} style={{display:showfilter}}>
                         <input name='title' type={'radio'} onClick={() => handleFilterBtn(filterBtn.title)} />
-                        {filterBtn.title}
+                        {filterBtn.name}
                     </p>
 
                 ))}

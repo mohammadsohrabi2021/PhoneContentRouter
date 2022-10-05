@@ -7,7 +7,7 @@ import { DataForm } from './components/Data/Data';
 import SinglePageUser from './Page/SinglePageUser';
 
 
-const App =({todo})=> {
+const App =()=> {
    //start data card
    const [todos, setTodos] = useState(DataForm)
    // ende data card
@@ -24,10 +24,8 @@ const App =({todo})=> {
         element: <Form  setTodos={setTodos} todos={todos} form={form}setForm={setForm} setFormStatus={setFormStatus} FormStatus={FormStatus}/>,
     },
     {
-      path: "/singlepage/:user",
-      element: <SinglePageUser 
-       setForm={setForm} setFormStatus={setFormStatus} todos={todos} setTodos={setTodos} 
-      />,
+      path: "/contacts/:user",
+      element: <SinglePageUser  todos={todos}  />,
   },
   ]);
   

@@ -17,12 +17,12 @@ const Card = ({ setForm, setFormStatus, setTodos, todos, handleDialog, idProduct
 
     return (
         <div className={styles.container}>
-         
+
             <div className={styles.card}>
                 <div>
-                  <Link to={`/contacts/${todo.user}`}>
-                  <img style={{width:'50px'}} src={`https://avatars.dicebear.com/api/avataaars/:${todo.user}.svg`} alt="avatar" />
-                  </Link>
+                    <Link to={`/contacts/${todo.user}`}>
+                        <img style={{ width: '50px' }} src={`https://avatars.dicebear.com/api/avataaars/:${todo.user}.svg`} alt="avatar" />
+                    </Link>
                 </div>
                 <div className={styles.display__one}>
                     <h5>{todo.user}</h5>
@@ -53,11 +53,11 @@ const Card = ({ setForm, setFormStatus, setTodos, todos, handleDialog, idProduct
                 </div>
                 <div>
                     <button className='btn btn-danger mx-1 my-3' onClick={() => handeleDelete(todo.user)}>
-                    <i class="fa-solid fa-trash"></i>
+                        <i class="fa-solid fa-trash"></i>
                     </button>
                     <Link to={`/Form`}>
                         <button className='btn btn-success mx-1 my-3' onClick={() => handleUpdate(todo)}>
-                        <i class="fa-solid fa-user-pen"></i>
+                            <i class="fa-solid fa-user-pen"></i>
                         </button>
                     </Link>
                 </div>

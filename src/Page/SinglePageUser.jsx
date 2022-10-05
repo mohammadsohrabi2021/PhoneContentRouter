@@ -15,7 +15,7 @@ const SinglePageUser = ({ todos }) => {
             <div className={Styles.container}>
                 <Link to={'/'}>
                     <button className='btn btn-primary'>
-                        <i class="fa-solid fa-arrow-left"></i>Home
+                        <i class="fa-solid fa-arrow-left"></i> Home
                     </button>
                 </Link>
                 <div class="row g-0 border rounded-2 m-3 ">
@@ -24,31 +24,31 @@ const SinglePageUser = ({ todos }) => {
                     </div>
                     <div className={Styles.Card}>
                         <div className={Styles.itemCard}>
-                            <h5>user:{contact.user}</h5>
+                            <h5>user : {contact.user}</h5>
                         </div>
                         <div class="card-body" className={Styles.itemCard}>
                             <h5>name : {contact.name}</h5>
                         </div>
                         <div class="card-body" className={Styles.itemCard}>
-                            <h5>lastName:{contact.lastName}</h5>
+                            <h5>lastName : {contact.lastName}</h5>
                         </div>
                         <div class="card-body" className={Styles.itemCard}>
-                            <h5> phone:{contact.phone}</h5>
+                            <h5> phone : {contact.phone}</h5>
                         </div>
                         <div class="card-body" className={Styles.itemCard} style={{ cursor: 'pointer' }}>
-                            <h5>state: {contact.state ?  <i class="fa-solid fa-heart text-danger" ></i> : <i  class="fa-regular fa-heart " ></i>}</h5>
+                            <h5>state : {contact.state ?  <i class="fa-solid fa-heart text-danger" ></i> : <i  class="fa-regular fa-heart " ></i>}</h5>
                         </div>
                         <div class="card-body" className={Styles.itemCard}>
-                            <h5>age:{contact.age}</h5>
+                            <h5>age : {contact.age}</h5>
                         </div>
                         <div class="card-body" className={Styles.itemCard}>
-                            <h5> Country:{contact.Country}</h5>
+                            <h5> Country : {contact.Country}</h5>
                         </div>
                         <div class="card-body" className={Styles.itemCard}>
-                            <h5>City:{contact.City}</h5>
+                            <h5>City : {contact.City}</h5>
                         </div>
                         <div class="card-body" className={Styles.itemCard}>
-                            <h5> Email:<br />{contact.email}</h5>
+                            <h5> Email :<br />{contact.email}</h5>
                         </div>
                     </div>
                 </div>

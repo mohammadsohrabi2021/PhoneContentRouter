@@ -20,7 +20,9 @@ const Card = ({ setForm, setFormStatus, setTodos, todos, handleDialog, idProduct
          
             <div className={styles.card}>
                 <div>
-                    <img style={{width:'50px'}} src={`https://avatars.dicebear.com/api/avataaars/:${todo.user}.svg`} alt="avatar" />
+                  <Link to={`/contacts/${todo.user}`}>
+                  <img style={{width:'50px'}} src={`https://avatars.dicebear.com/api/avataaars/:${todo.user}.svg`} alt="avatar" />
+                  </Link>
                 </div>
                 <div className={styles.display__one}>
                     <h5>{todo.user}</h5>

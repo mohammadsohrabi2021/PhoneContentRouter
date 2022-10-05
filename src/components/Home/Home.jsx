@@ -54,7 +54,7 @@ const Home = ({ todos, setTodos, setForm, setFormStatus }) => {
                     <Card todo={todo} setForm={setForm} setFormStatus={setFormStatus} todos={todos} setTodos={setTodos} handleDialog={handleDialog} idProductRef={idProductRef} />
                 ))}
             </div>
-
+            
             {dialog.isLoading && (
                 <Dialog
                     //Update

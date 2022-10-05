@@ -37,7 +37,7 @@ const Card = ({ setForm, setFormStatus, setTodos, todos, handleDialog, idProduct
                     <h5>{todo.phone}</h5>
                 </div>
                 <div className={styles.display__four} onClick={() => handelCheck(todo.user)} style={{ cursor: 'pointer' }}>
-                    <h5>{todo.state ? ' Inactive ' : ' active '}</h5>
+                    <h5>{todo.state ? <i class="fa-regular fa-heart " ></i> : <i class="fa-solid fa-heart text-danger"></i>}</h5>
                 </div>
                 <div className={styles.display__five}>
                     <h5>{todo.age}</h5>

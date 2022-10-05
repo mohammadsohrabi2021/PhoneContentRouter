@@ -36,7 +36,7 @@ const SinglePageUser = ({ todos }) => {
                             <h5> phone:{contact.phone}</h5>
                         </div>
                         <div class="card-body" className={Styles.itemCard} style={{ cursor: 'pointer' }}>
-                            <h5>state:{contact.state ? ' Inactive ' : ' active '}</h5>
+                            <h5>state: {contact.state ?  <i class="fa-regular fa-heart " ></i> : <i class="fa-solid fa-heart text-danger"></i>}</h5>
                         </div>
                         <div class="card-body" className={Styles.itemCard}>
                             <h5>age:{contact.age}</h5>

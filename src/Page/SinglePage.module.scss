@@ -1,31 +1,39 @@
 .container{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-   
-}
-@media only screen and (max-width: 552px) {
-    .containerCard{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 2px;
-        gap: 10px;
-       font-size: 10px;
+    margin:10px 0;
+    border-radius: 8px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(218, 218, 230, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    .Avatar{
+       padding-left: 20px;
+       margin:auto 30px;
+       width: 33%;
+       border-radius: 50%;
+       
     }
-}
-@media only screen and (min-width: 552px) {
+
     .containerCard{
-        width: 80%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        padding: 2px;
-        gap: 10px;
-       font-size: 10px;
+        width: 100% !important;
+        margin-top: 30px;
+        border-radius: 8px;
+    }
+    .Card{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        color: #000;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    
+        .itemCard{
+            width: 50%;
+            h5{
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .container{
+         width: 50%;
     }
 }

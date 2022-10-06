@@ -30,19 +30,19 @@ const Form = ({ setTodos, todos, form, setForm, setFormStatus, FormStatus }) => 
                 </Link>
                 <form onSubmit={handleSubmit} className={styles.form}>
                     <lable htmlFor={'name'}>Name:*</lable>
-                    <input type='text' name='name' value={form.name} onChange={handleChange} placeholder='Mohammad' />
+                    <input type='text' id='name' name='name' value={form.name} onChange={handleChange} placeholder='Mohammad' />
                     <lable htmlFor={'lastName'}>lastName:*</lable>
-                    <input type='text' name='lastName' value={form.lastName} onChange={handleChange} placeholder='Sohrabi' />
+                    <input type='text' id='lastName' name='lastName' value={form.lastName} onChange={handleChange} placeholder='Sohrabi' />
                     <lable htmlFor={'phone'}>Phone:*</lable>
-                    <input type='number' name='phone' value={form.phone} onChange={handleChange} placeholder='0918xxxxxxx' />
+                    <input type='number' id='phone' name='phone' value={form.phone} onChange={handleChange} placeholder='0918xxxxxxx' />
                     <lable htmlFor={'City'}>City:*</lable>
-                    <input type='text' name='City' value={form.City} onChange={handleChange} placeholder='Hamedan' />
+                    <input type='text' id='City' name='City' value={form.City} onChange={handleChange} placeholder='Hamedan' />
                     <lable htmlFor={'Country'}>Country:*</lable>
-                    <input type='text' name='Country' value={form.Country} onChange={handleChange} placeholder='Iran' />
+                    <input type='text' id='Country' name='Country' value={form.Country} onChange={handleChange} placeholder='Iran' />
                     <lable htmlFor={'email'}>Email:*</lable>
-                    <input type='email' name='email' value={form.email} onChange={handleChange} placeholder='Ms@gmail.com' />
+                    <input type='email' id='email' name='email' value={form.email} onChange={handleChange} placeholder='Ms@gmail.com' />
                     <lable htmlFor={'age'}>age:*</lable>
-                    <input type='number' name='age' value={form.age} onChange={handleChange} placeholder='21' />
+                    <input type='number' id='age' name='age' value={form.age} onChange={handleChange} placeholder='21' />
 
                     <button type='submit' onClick={handleSubmit} className='btn btn-success my-3' >
                         {FormStatus === 'add' ? 'submit' : 'update'}

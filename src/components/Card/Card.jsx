@@ -55,7 +55,7 @@ const Card = ({ setForm, setFormStatus, setTodos, todos, handleDialog, idProduct
                     <button className='btn btn-danger mx-1 my-3' onClick={() => handeleDelete(todo.user)}>
                         <i class="fa-solid fa-trash"></i>
                     </button>
-                    <Link to={`/Form`}>
+                    <Link to={`/EditForm/${todo.user}`}>
                         <button className='btn btn-success mx-1 my-3' onClick={() => handleUpdate(todo)}>
                             <i class="fa-solid fa-user-pen"></i>
                         </button>
